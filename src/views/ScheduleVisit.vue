@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { DatePicker, Footer } from '../components'
 </script>
 

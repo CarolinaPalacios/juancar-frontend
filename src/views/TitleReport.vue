@@ -162,7 +162,7 @@
   <component :is="Footer" id="footer"></component>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, watch } from 'vue'
 import { useReportStore, ReportType } from '../store/report'
 import {

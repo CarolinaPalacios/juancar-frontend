@@ -34,7 +34,7 @@
   <component :is="Footer" id="footer"></component>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { Footer } from '../components'
 import { areas } from '../utils/consts'
 </script>

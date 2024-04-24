@@ -1,55 +1,6 @@
-<script setup lang="ts">
+<script setup>
 import { Footer } from '../components'
-interface Services {
-  name: string
-  src: string
-  description: string[]
-}
-
-const services: Services[] = [
-  {
-    name: 'Cerrajería',
-    src: '/src/assets/cerrajeria.png',
-    description: [
-      'Cerrajería',
-      'Llaves Codificadas',
-      'Navaja',
-      'Telemandos',
-      'Simples',
-    ],
-  },
-  {
-    name: 'Mecánica',
-    src: '/src/assets/mecanica.png',
-    description: [
-      'Mecánica completa',
-      'Embragues',
-      'Tren delantero y trasero',
-      'Dirección',
-      'Frenos',
-      'Inyección nafta / diesel',
-      'Encendido',
-      'Muchos más',
-    ],
-  },
-  {
-    name: 'Electrónica',
-    src: '/src/assets/electricity.png',
-    description: [
-      'Reparación de tableros',
-      'ECU (Desinmo)',
-      'BSI',
-      'Airbags',
-      'Comandos Alzacistales',
-      'Muchos más',
-    ],
-  },
-  {
-    name: 'Escaneo',
-    src: '/src/assets/scan.png',
-    description: ['Escaneo', 'Diagnostico', 'Eliminación de averías'],
-  },
-]
+import { services } from '../utils/consts'
 </script>
 
 <template>

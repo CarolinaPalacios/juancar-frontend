@@ -1,25 +1,8 @@
-<script setup lang="ts">
+<script setup>
 import { RouterLink } from 'vue-router'
 import { GoogleMap, Marker } from 'vue3-google-map'
 import { UserCircle2 } from '@iconsans/vue/bold'
-
-const whyUs = [
-  { name: 'Areas de cobertura', href: '/areas-de-cobertura' },
-  { name: 'Precios', href: '/cotizar' },
-  { name: 'Seguridad', href: '/#seguridad' },
-  { name: 'Contacto', href: '/#contacto' },
-  { name: 'Tecnología utilizada', href: '/#tecnologías' },
-  { name: 'Cómo funciona', href: '/#como-funciona' },
-  { name: 'Qué incluye', href: '/#que-incluye' },
-  { name: 'Puntos de verificación', href: '/#puntos-de-verificación' },
-]
-
-const services = [
-  { name: 'Cerrajería', href: '/servicios' },
-  { name: 'Mecánica', href: '/servicios' },
-  { name: 'Electrónica', href: '/servicios' },
-  { name: 'Escaneo', href: '/servicios' },
-]
+import { whyUs, footerServices } from '../utils/consts'
 
 const center = { lat: -34.62104415893555, lng: -58.57676315307617 }
 
@@ -98,7 +81,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
         class="mt-2 relative tablet-md:left-10 desktop-xl:left-7 desktop-lg:left-16 mobile-xs:space-y-3 mobile-sm:space-y-3 mobile-md:space-y-3"
       >
         <h4 class="text-xl text-[#d5d5d5]">OTROS SERVICIOS</h4>
-        <ul v-for="item in services" class="mt-5 flex gap-2">
+        <ul v-for="item in footerServices" class="mt-5 flex gap-2">
           <li
             :key="item.name"
             class="text-[#747474] hover:text-[#2E6CA4] cursor-pointer flex items-center"

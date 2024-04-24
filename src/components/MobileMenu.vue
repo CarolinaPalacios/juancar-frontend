@@ -57,39 +57,12 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
 import { MenuHamburger, Cross } from '@iconsans/vue/linear'
 import { Area, Box, Coins, Gear, Tools } from './icons'
+import { menuItems } from '../utils/consts'
 
 const mobileMenuOpen = ref(false)
 const toggleMobileMenu = () => (mobileMenuOpen.value = !mobileMenuOpen.value)
-
-const menuItems = [
-  {
-    title: '¿Cómo funciona?',
-    href: '/#como-funciona',
-    icon: Gear,
-  },
-  {
-    title: '¿Qué incluye?',
-    href: '/#que-incluye',
-    icon: Box,
-  },
-  {
-    title: 'Otros servicios',
-    href: '/servicios',
-    icon: Tools,
-  },
-  {
-    title: 'Zonas de cobertura',
-    href: '/areas-de-cobertura',
-    icon: Area,
-  },
-  {
-    title: 'Solicitar cotización',
-    href: '/cotizar',
-    icon: Coins,
-  },
-]
 </script>

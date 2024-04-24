@@ -1,0 +1,64 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+import { MobileMenu } from '../components'
+</script>
+
+<template>
+  <header>
+    <nav
+      class="flex items-center shadow-lg shadow-gray-600 h-20 border-b-2 border-b-black tracking-tight"
+    >
+      <RouterLink to="/" class="flex items-center gap-2 desktop-xl:ml-8 ml-5">
+        <strong class="desktop-xl:text-xl text-lg">JuanCar</strong>
+        <img
+          src="../assets/logo.svg"
+          alt="logo"
+          class="h-10 w-10 border-[1px] border-gray-600 rounded-full"
+      /></RouterLink>
+
+      <component :is="MobileMenu" />
+
+      <nav class="hidden lg:flex justify-around tracking-tight">
+        <div
+          class="text-[#909090] desktop-xl:ml-48 desktop-lg:ml-16 tablet-md:ml-10 desktop-xl:mr-48 desktop-lg:mr-16 desktop-lg:space-x-16 desktop-xl:space-x-36 tablet-md:space-x-5 py-2"
+        >
+          <a
+            href="/#como-funciona"
+            class="hover:text-[#2E6CA4] duration-300 ease-in-out"
+            >¿Cómo funciona?</a
+          >
+          <a
+            href="/#que-incluye"
+            class="hover:text-[#2E6CA4] duration-300 ease-in-out"
+            >¿Qué incluye?</a
+          >
+          <a
+            href="/servicios"
+            class="hover:text-[#2E6CA4] duration-300 ease-in-out"
+            >Servicios</a
+          >
+          <a
+            href="/areas-de-cobertura"
+            class="hover:text-[#2E6CA4] duration-300 ease-in-out"
+            >Zonas de cobertura</a
+          >
+          <a
+            href="/cotizar"
+            class="hover:text-[#2E6CA4] duration-300 ease-in-out"
+            >Solicitar cotización</a
+          >
+        </div>
+      </nav>
+      <button
+        class="hidden lg:flex items-center gap-2 tablet-md:relative left-5 border-black py-2 border-2 rounded-2xl px-3"
+      >
+        <img src="../assets/logic-date.svg" alt="date" class="h-6 w-6" />
+        <a
+          href="/agendar-visita"
+          class="hover:text-[#2E6CA4] duration-300 ease-in-out"
+          >Agendar visita</a
+        >
+      </button>
+    </nav>
+  </header>
+</template>

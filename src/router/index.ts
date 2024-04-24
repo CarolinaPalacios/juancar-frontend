@@ -9,10 +9,8 @@ import {
   TitleReport,
 } from '../views/index'
 
-const BASE_URL = import.meta.env.VUE_APP_BASE_URL || '/'
-
 export const router = createRouter({
-  history: createWebHistory(BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createMemoryHistory } from 'vue-router'
 import {
   CoverageAreas,
   Home,
@@ -10,7 +10,7 @@ import {
 } from '../views/index'
 
 export const router = createRouter({
-  history: createWebHistory(import.meta.env.VUE_APP_BASE_URL),
+  history: createMemoryHistory(),
   routes: [
     {
       path: '/',

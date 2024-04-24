@@ -11,7 +11,7 @@ import { MobileMenu } from '../components'
       <RouterLink to="/" class="flex items-center gap-2 desktop-xl:ml-8 ml-5">
         <strong class="desktop-xl:text-xl text-lg">JuanCar</strong>
         <img
-          src="../assets/logo.svg"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998071/logo_bs3tv5.svg"
           alt="logo"
           class="h-10 w-10 border-[1px] border-gray-600 rounded-full"
       /></RouterLink>
@@ -52,7 +52,11 @@ import { MobileMenu } from '../components'
       <button
         class="hidden lg:flex items-center gap-2 tablet-md:relative left-5 border-black py-2 border-2 rounded-2xl px-3"
       >
-        <img src="../assets/logic-date.svg" alt="date" class="h-6 w-6" />
+        <img
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998065/logic-date_qbgxyq.svg"
+          alt="date"
+          class="h-6 w-6"
+        />
         <a
           href="/agendar-visita"
           class="hover:text-[#2E6CA4] duration-300 ease-in-out"

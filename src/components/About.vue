@@ -33,7 +33,7 @@
         <div class="flex flex-col py-5 space-y-4">
           <div class="flex items-center space-x-6">
             <img
-              src="../assets/check.svg"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998001/check_f0u5dk.svg"
               alt="check"
               class="h-8 w-8 rounded-full bg-[#85c6ff5f]"
             />
@@ -44,7 +44,7 @@
 
           <div class="flex items-center space-x-6">
             <img
-              src="../assets/check.svg"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998001/check_f0u5dk.svg"
               alt="check"
               class="h-8 w-8 rounded-full bg-[#85c6ff5f]"
             />
@@ -54,7 +54,7 @@
           </div>
           <div class="flex items-center space-x-6">
             <img
-              src="../assets/check.svg"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998001/check_f0u5dk.svg"
               alt="check"
               class="h-8 w-8 rounded-full bg-[#85c6ff5f]"
             />
@@ -64,7 +64,7 @@
           </div>
           <div class="flex items-center space-x-6">
             <img
-              src="../assets/check.svg"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998001/check_f0u5dk.svg"
               alt="check"
               class="h-8 w-8 rounded-full bg-[#85c6ff5f]"
             />
@@ -72,7 +72,7 @@
           </div>
           <div class="flex items-center space-x-6">
             <img
-              src="../assets/check.svg"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998001/check_f0u5dk.svg"
               alt="check"
               class="h-8 w-8 rounded-full bg-[#85c6ff5f]"
             />
@@ -84,7 +84,7 @@
       </div>
       <div>
         <img
-          src="../assets/quality.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998161/quality_hu31yh.png"
           alt="quality"
           class="lg:h-[28rem] tablet-md:h-96 lg:relative bottom-9 tablet-md:top-2"
         />

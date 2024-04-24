@@ -15,7 +15,7 @@
       >
         <img
           class="rounded-t-lg"
-          src="../assets/comprobador-de-baterias.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998009/comprobador-de-baterias_fr1oqc.png"
           alt="comprobador de baterias"
         />
         <div class="p-5 bg-[#5f5f5f] rounded-b-lg">
@@ -27,7 +27,7 @@
       >
         <img
           class="rounded-t-lg"
-          src="../assets/medidor-choques.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998095/medidor-choques_mhthav.png"
           alt="medidor de choques"
         />
         <div class="p-5 bg-[#5f5f5f] rounded-b-lg">
@@ -39,7 +39,7 @@
       >
         <img
           class="rounded-t-lg"
-          src="../assets/medidor-neumaticos.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998096/medidor-neumaticos_tko7oi.png"
           alt="medidor de neumaticos"
         />
         <div class="p-5 bg-[#5f5f5f] rounded-b-lg">
@@ -55,8 +55,8 @@
       >
         <img
           class="rounded-t-lg"
-          src="../assets/escaneo-vehicular.png"
-          alt="comprobador de baterias"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998021/escaneo-vehicular_oalp0t.png"
+          alt="escaneo vehicular"
         />
         <div class="p-5 bg-[#5f5f5f] rounded-b-lg">
           <h5 class="text-md text-center text-white">Escaneo Profesional</h5>

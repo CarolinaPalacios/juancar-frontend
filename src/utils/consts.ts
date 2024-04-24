@@ -123,7 +123,7 @@ export interface Services {
 export const services = [
   {
     name: 'Cerrajería',
-    src: '/src/assets/cerrajeria.png',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997994/cerrajeria_cutnn2.png',
     description: [
       'Cerrajería',
       'Llaves Codificadas',
@@ -134,7 +134,7 @@ export const services = [
   },
   {
     name: 'Mecánica',
-    src: '/src/assets/mecanica.png',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998088/mecanica_xudrx0.png',
     description: [
       'Mecánica completa',
       'Embragues',
@@ -148,7 +148,7 @@ export const services = [
   },
   {
     name: 'Electrónica',
-    src: '/src/assets/electricity.png',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998017/electricity_zgih9p.png',
     description: [
       'Reparación de tableros',
       'ECU (Desinmo)',
@@ -160,7 +160,7 @@ export const services = [
   },
   {
     name: 'Escaneo',
-    src: '/src/assets/scan.png',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998181/scan_lveock.png',
     description: ['Escaneo', 'Diagnostico', 'Eliminación de averías'],
   },
 ]
@@ -211,84 +211,84 @@ export const items: Item[] = [
     name: 'Datos del vehículo',
     description:
       'Marca, modelo, versión, origen, nro. de motor y chasis, radicación, inscripción inicial, tipo, etc',
-    src: '/src/assets/maintenance-black.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998084/maintenance-black_oh5j7m.svg',
     alt: 'maintenance',
   },
   {
     name: 'Titulares historicos',
     description:
       'Nombres, appellidos, DNI, direcciones desde 0km, porcentajes de titularidad, etc',
-    src: '/src/assets/people.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998125/people_ypipo8.svg',
     alt: 'people',
   },
   {
     name: 'Inhibicion del dueño',
     description:
       'Medida dictada por un juez a pedido de un acreedor que impide la venta del vehículo',
-    src: '/src/assets/car-file.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997979/car-file_ic1jrs.svg',
     alt: 'car-file',
   },
   {
     name: 'Deudas de infracciones',
     description:
       'Multas vigentes y adeudadas en todo el territorio argentino registradas a la fecha',
-    src: '/src/assets/license-plate.png',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998048/license-plate_ktzfbe.png',
     alt: 'license-plate',
   },
   {
     name: 'Denuncias de compra',
     description:
       'Legajo con denuncias de transferencias no realizadas por los antiguos titulares',
-    src: '/src/assets/car-key.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997985/car-key_hs94gh.svg',
     alt: 'car-key',
   },
   {
     name: 'Problemas legales',
     description:
       'Medidas cautelares inscriptas en el legajo que impidan una correcta transferencia',
-    src: '/src/assets/judge.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998041/judge_pkgr5b.svg',
     alt: 'judge',
   },
   {
     name: 'Robo o secuestro',
     description:
       'Registros de denuncia por robo o secuestro vigente de la PFA y/o gendarmería',
-    src: '/src/assets/ladron.png',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998042/ladron_zfy9wi.png',
     alt: 'thief',
   },
   {
     name: 'Prohibicion circular',
     description:
       'Algún oficio de prohibición vigente que impida el uso o la circulación en la vía pública',
-    src: '/src/assets/prohibited.png',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998150/prohibited_oceoh0.png',
     alt: 'prohibited',
   },
   {
     name: 'Historico de titulares',
     description:
       'Algún oficio de prohibición vigente que impida el uso o la circulación en la vía pública',
-    src: '/src/assets/car-history.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997980/car-history_dfxmar.svg',
     alt: 'history',
   },
   {
     name: 'Prendas y embargos',
     description:
       'Cancelaciones de créditos y juicios pendientes o vigentes con sus respectivos importes',
-    src: '/src/assets/debt.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998010/debt_wkasev.svg',
     alt: 'debt',
   },
   {
     name: 'Sucesion en tramite',
     description:
       'Documentación jurídica de juicios vigentes por sucesión o herencia que impidan la transacción',
-    src: '/src/assets/in-process.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998034/in-process_jaoduu.svg',
     alt: 'in-process',
   },
   {
     name: 'Leasing o usufructo',
     description:
       'Contratos vigentes que afecten la tenencia y posesión del bien o mismo su cancelación',
-    src: '/src/assets/exchange.svg',
+    src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998021/exchange_fqi4vq.svg',
     alt: 'exchange',
   },
 ]

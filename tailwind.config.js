@@ -16,12 +16,6 @@ export default {
         'desktop-lg': { min: '1280px' },
         'desktop-xl': { min: '1536px' },
       },
-      backgroundImage: {
-        cerrajeria: "url('../assets/cerrajeria.png')",
-        electricidad: "url('../assets/electricity.png')",
-        mecanica: "url('../assets/mecanica.png')",
-        escaneo: "url('../assets/scan.png')",
-      },
     },
   },
   plugins: [require('flowbite/plugin')],

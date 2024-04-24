@@ -15,7 +15,7 @@
           class="flex flex-col items-center bg-[#D9D9D9] desktop-xl:py-20 desktop-lg:py-12 py-8 mobile-xs:py-8"
         >
           <img
-            src="../assets/calendar.png"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997973/calendar_bjyq01.png"
             alt="calendar"
             class="desktop-xl:h-28 desktop-lg:h-24 desktop-xl:w-36 desktop-lg:w-32 sm:w-24 sm:h-20 w-20 h-16 relative right-3"
           />
@@ -36,7 +36,7 @@
           class="flex flex-col items-center bg-[#D9D9D9] desktop-xl:py-20 desktop-lg:py-12 py-8 mobile-xs:py-8"
         >
           <img
-            src="../assets/methods.png"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998096/methods_da3ugf.png"
             alt="methods"
             class="desktop-xl:h-28 desktop-lg:h-24 desktop-xl:w-44 desktop-lg:w-36 sm:w-32 sm:h-20 w-24 h-16 relative"
           />
@@ -58,7 +58,7 @@
           class="flex flex-col items-center bg-[#D9D9D9] desktop-xl:py-20 desktop-lg:py-12 py-8 mobile-xs:py-8"
         >
           <img
-            src="../assets/mobile-and-computer.png"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998116/mobile-and-computer_favfa6.png"
             alt="mobile and computer"
             class="desktop-xl:h-28 desktop-lg:h-24 desktop-xl:w-44 desktop-lg:w-36 sm:w-32 sm:h-20 w-24 h-16 relative"
           />

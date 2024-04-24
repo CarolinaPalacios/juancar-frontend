@@ -31,11 +31,19 @@
         class="flex mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-row items-start gap-3 mt-6 border-t-2 border-t-gray-400 pt-5"
       >
         <div class="flex items-center gap-2 relative left-1 mobile-md:top-1">
-          <img src="../assets/clock.svg" alt="clock" class="h-5 w-5" />
+          <img
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998002/clock_xickvo.svg"
+            alt="clock"
+            class="h-5 w-5"
+          />
           <p class="text-[#6d6d6d] text-xs">Lunes a Sábado de 9:00 a 19:00hs</p>
         </div>
         <div class="flex items-center gap-2">
-          <img src="../assets/mobile.svg" alt="mobile" class="h-7 w-7" />
+          <img
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998114/mobile_f5airq.svg"
+            alt="mobile"
+            class="h-7 w-7"
+          />
           <p class="text-[#6d6d6d] text-xs relative right-1">
             +54 11 2718-0197
           </p>
@@ -44,7 +52,7 @@
           class="flex items-center gap-2 relative mobile-md:bottom-0.5 mobile-xs:bottom-1 mobile-xs:right-0.5 mobile-sm:right-0.5"
         >
           <img
-            src="../assets/location-nav.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998061/location-nav_pufysc.svg"
             alt="location"
             class="h-8 w-8"
           />

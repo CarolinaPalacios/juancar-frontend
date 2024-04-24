@@ -14,7 +14,7 @@
         class="text-[#666565] flex justify-center items-center flex-col mobile-sm:py-2 mobile-xs:py-2"
       >
         <img
-          src="../assets/plate.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998144/plate_zpe41s.png"
           alt="plate"
           class="desktop-xl:w-40 desktop-lg:w-32 md:w-24 mobile-xs:w-20 mobile-sm:w-20"
         />
@@ -31,7 +31,7 @@
         class="text-[#666565] flex justify-center items-center flex-col mobile-sm:py-2 mobile-xs:py-2"
       >
         <img
-          src="../assets/methods-black.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998110/methods-black_p7b0to.png"
           alt="methods"
           class="desktop-xl:w-44 desktop-xl:h-28 desktop-lg:w-32 md:w-24 mobile-xs:w-20 mobile-sm:w-20"
         />
@@ -48,7 +48,7 @@
         class="text-[#666565] flex justify-center items-center flex-col mobile-sm:py-2 mobile-xs:py-2"
       >
         <img
-          src="../assets/report.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998170/report_kghz0n.png"
           alt="report"
           class="desktop-xl:w-40 desktop-lg:w-32 md:w-24 mobile-xs:w-20 mobile-sm:w-20 desktop-xl:h-[98.45px]"
         />

@@ -17,23 +17,35 @@ import {
       class="flex text-[#262626] items-center desktop-xl:space-x-60 desktop-lg:space-x-32 tablet-md:space-x-12"
     >
       <div class="flex items-center gap-2">
-        <img src="../assets/clock.svg" alt="clock" class="h-6 w-6" />
+        <img
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998002/clock_xickvo.svg"
+          alt="clock"
+          class="h-6 w-6"
+        />
         <p>Lunes a Sábados de 9:00 a 19:00hs</p>
       </div>
       <div class="flex items-center">
-        <img src="../assets/mobile.svg" alt="mobile" class="h-8 w-7" />
+        <img
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998114/mobile_f5airq.svg"
+          alt="mobile"
+          class="h-8 w-7"
+        />
         <p>+54 11 2718-0197</p>
       </div>
       <div class="flex items-center">
         <img
-          src="../assets/location-nav.svg"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998061/location-nav_pufysc.svg"
           alt="location"
           class="h-8 w-8 p-0 mb-0.5"
         />
         <p>Buenos Aires, Argentina</p>
       </div>
       <div class="flex items-center gap-2">
-        <img src="../assets/tools.svg" alt="tools" class="h-6 w-6" />
+        <img
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998198/tools_wbaihl.svg"
+          alt="tools"
+          class="h-6 w-6"
+        />
         <RouterLink to="/servicios">Otros Servicios</RouterLink>
       </div>
     </div>
@@ -77,7 +89,7 @@ import {
     </div>
     <div class="lg:order-2 mobile-xs:py-2 mobile-sm:py-2 mobile-md:py-2">
       <img
-        src="../assets/peritaje_car_parts_explain.png"
+        src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998134/peritaje_car_parts_explain_nbjzob.png"
         alt="peritaje"
         class="w-full mx-auto"
       />
@@ -102,7 +114,7 @@ import {
         <div class="order-1 flex flex-col items-center">
           <div class="flex items-center">
             <img
-              src="../assets/mobile-user.svg"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998124/mobile-user_wi9778.svg"
               alt="mobile"
               class="desktop-xl:h-28 desktop-lg:h-20 mobile-md:h-20 tablet-md:h-20"
             />
@@ -130,7 +142,7 @@ import {
         <div class="order-2 flex flex-col items-center relative left-4">
           <div class="flex items-center">
             <img
-              src="../assets/hucha.png"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998029/hucha_w7a6g8.png"
               alt="hucha"
               class="desktop-xl:h-28 desktop-lg:h-20 mobile-md:h-20 tablet-md:h-20"
             />
@@ -159,7 +171,7 @@ import {
         <div class="order-3 flex flex-col items-center">
           <div class="flex items-center">
             <img
-              src="../assets/home-location.svg"
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998026/home-location_d6uvo3.svg"
               alt="mobile"
               class="desktop-xl:h-28 desktop-lg:h-20 mobile-md:h-20 tablet-md:h-20"
             />

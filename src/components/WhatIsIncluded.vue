@@ -13,7 +13,7 @@
       <div class="relative">
         <div class="flex flex-col">
           <img
-            src="../assets/car-location.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997987/car-location_mqcjw2.svg"
             alt="location"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:w-28 sm:w-24 relative desktop-xl:right-7 desktop-lg:right-5 top-1"
           />
@@ -32,7 +32,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/car-broken.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997977/car-broken_a45ebb.svg"
             alt="car broken"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-4 relative desktop-xl:right-6"
           />
@@ -51,7 +51,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/scan.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998181/scan_frei2y.svg"
             alt="scan"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 mobile-xs:w-20 mobile-sm:w-24 sm:w-24 relative desktop-xl:right-6 desktop-lg:right-4"
           />
@@ -70,7 +70,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/speedometer.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998188/speedometer_hiigxn.svg"
             alt="speedometer"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 relative desktop-lg:right-4 desktop-xl:right-[22px]"
           />
@@ -90,8 +90,8 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/maintenance.svg"
-            alt="car broken"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998074/maintenance_z6fvxn.svg"
+            alt="car maintenance"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 relative desktop-xl:right-6 desktop-lg:right-4"
           />
           <p
@@ -109,7 +109,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/electrical.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998015/electrical_w0fjqx.svg"
             alt="electrical"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-4 relative desktop-xl:right-6"
           />
@@ -128,7 +128,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/suspension.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998197/suspension_cs7y8w.svg"
             alt="suspension"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-4 relative desktop-xl:right-6"
           />
@@ -147,7 +147,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/car-price.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997990/car-price_d2ekyf.svg"
             alt="car price"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-4 relative desktop-xl:right-6"
           />
@@ -166,7 +166,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/steering-wheel.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998190/steering-wheel_yiqnan.svg"
             alt="steering wheel"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-4 relative desktop-xl:right-6"
           />
@@ -185,7 +185,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/car-report.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997991/car-report_ctvmmk.svg"
             alt="report"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-4 relative desktop-xl:right-6"
           />
@@ -205,7 +205,7 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/customer-service.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998009/customer-service_ixuxjp.svg"
             alt="customer service"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-6 relative desktop-xl:right-9"
           />
@@ -224,8 +224,8 @@
       <div class="relative">
         <div class="flex flex-col bg-[#D9D9D9]">
           <img
-            src="../assets/car-report.svg"
-            alt="steering wheel"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997997/certificate_xfeouc.svg"
+            alt="certificate"
             class="desktop-xl:h-24 desktop-lg:h-20 desktop-xl:w-36 desktop-lg:w-28 sm:w-24 mobile-xs:w-20 mobile-sm:w-24 desktop-lg:right-4 relative desktop-xl:right-6"
           />
           <p

@@ -18,7 +18,11 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
     >
       <div class="">
         <div class="flex items-center border-b-2 border-[#2E6CA4] pb-2">
-          <img src="../assets/logo.svg" alt="logo" class="h-10 w-10" />
+          <img
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998071/logo_bs3tv5.svg"
+            alt="logo"
+            class="h-10 w-10"
+          />
           <span
             class="desktop-xl:text-4xl desktop-lg:text-3xl text-lg font-medium ml-3"
             >JUANCAR</span
@@ -33,24 +37,36 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
         </p>
         <div class="flex items-center gap-2 mt-5">
           <img
-            src="../assets/argentina.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997971/argentina_mrwqvx.svg"
             alt="argentina"
             class="h-10 w-10"
           />
           <span>Argentina</span>
         </div>
         <div class="flex items-center gap-2 mt-5">
-          <img src="../assets/phone.svg" alt="phone" class="h-5 w-5" />
+          <img
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998135/phone_mwv9tp.svg"
+            alt="phone"
+            class="h-5 w-5"
+          />
           <a href="tel:+54 11 2718-0197">+54 11 2718-0197</a>
         </div>
         <div class="flex items-center gap-2 mt-5">
-          <img src="../assets/mail.svg" alt="mail" class="h-5 w-5" />
+          <img
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998072/mail_lkshtp.svg"
+            alt="mail"
+            class="h-5 w-5"
+          />
           <a href="mailto:agustinochoa98@outlook.com"
             >agustinochoa98@outlook.com</a
           >
         </div>
         <div class="flex items-center gap-2 mt-5">
-          <img src="../assets/location.svg" alt="location" class="h-5 w-5" />
+          <img
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998053/line_snu8hh.svg"
+            alt="location"
+            class="h-5 w-5"
+          />
           <span>Gral. Villegas 5456, Caseros, Buenos Aires</span>
         </div>
       </div>
@@ -63,7 +79,11 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
             :key="item.name"
             class="text-[#747474] hover:text-[#2E6CA4] cursor-pointer flex items-center"
           >
-            <img src="../assets/arrow.svg" alt="arrow" class="h-5 w-5" />
+            <img
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997972/arrow_xmk6a4.svg"
+              alt="arrow"
+              class="h-5 w-5"
+            />
             <RouterLink v-if="!item.href.includes('#')" :to="item.href">
               {{ item.name }}
             </RouterLink>
@@ -86,7 +106,11 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
             :key="item.name"
             class="text-[#747474] hover:text-[#2E6CA4] cursor-pointer flex items-center"
           >
-            <img src="../assets/arrow.svg" alt="arrow" class="h-5 w-5" />
+            <img
+              src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713997972/arrow_xmk6a4.svg"
+              alt="arrow"
+              class="h-5 w-5"
+            />
             <RouterLink
               :to="item.href"
               class="hover:text-[#2E6CA4] duration-300 ease-in-out"
@@ -100,7 +124,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
           <div class="flex gap-4 ml-2 mt-5">
             <a href="https://www.instagram.com/taller.juancar/" target="_blank">
               <img
-                src="../assets/instagram.svg"
+                src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998035/instagram_ppe2ic.svg"
                 alt="instagram"
                 class="h-9 w-9"
               />
@@ -110,7 +134,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
               target="_blank"
             >
               <img
-                src="../assets/facebook.svg"
+                src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998025/facebook_sleeq3.svg"
                 alt="instagram"
                 class="h-9 w-9"
               />

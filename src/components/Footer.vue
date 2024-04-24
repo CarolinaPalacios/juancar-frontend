@@ -63,7 +63,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
         </div>
         <div class="flex items-center gap-2 mt-5">
           <img
-            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998053/line_snu8hh.svg"
+            src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998060/location_xoay5j.svg"
             alt="location"
             class="h-5 w-5"
           />

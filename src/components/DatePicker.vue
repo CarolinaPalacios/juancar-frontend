@@ -325,22 +325,22 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import VueDatePicker from '@vuepic/vue-datepicker'
-import '@vuepic/vue-datepicker/dist/main.css'
-import { useAvailabilityStore } from '../store/availability'
-import { useAppointmentStore, FuelType, SellerType } from '../store/appointment'
-import { areas, years } from '../utils/consts'
+import { ref, onMounted } from 'vue';
+import VueDatePicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css';
+import { useAvailabilityStore } from '@/store/availability';
+import { useAppointmentStore, FuelType, SellerType } from '@/store/appointment';
+import { areas, years } from '@/utils/consts';
 
-const selectedDate = ref(new Date())
-const selectedTime = ref('')
-const selectedYear = ref('')
-const highlightedDates = ref([])
-const availableSlots = ref([])
-const disabledDates = ref([])
-const minDate = new Date()
-const maxDate = new Date()
-maxDate.setDate(maxDate.getDate() + 60)
+const selectedDate = ref(new Date());
+const selectedTime = ref('');
+const selectedYear = ref('');
+const highlightedDates = ref([]);
+const availableSlots = ref([]);
+const disabledDates = ref([]);
+const minDate = new Date();
+const maxDate = new Date();
+maxDate.setDate(maxDate.getDate() + 120);
 
 const formData = ref({
   date: '',
@@ -357,104 +357,104 @@ const formData = ref({
   model: '',
   year: selectedYear.value,
   willAttend: false,
-})
+});
 
-const availabilityStore = useAvailabilityStore()
-const appointmentStore = useAppointmentStore()
+const availabilityStore = useAvailabilityStore();
+const appointmentStore = useAppointmentStore();
 
 onMounted(async () => {
   try {
-    await availabilityStore.getAvailableDates()
-    highlightedDates.value = availabilityStore.availableDates
+    await availabilityStore.getAvailableDates();
+    highlightedDates.value = availabilityStore.availableDates;
 
-    let initialDate = selectedDate.value
+    let initialDate = selectedDate.value;
 
     if (initialDate.getDay() === 0 || initialDate.getDay() === 6) {
-      initialDate = findNextAvailableWeekday(initialDate)
-      selectedDate.value = initialDate
+      initialDate = findNextAvailableWeekday(initialDate);
+      selectedDate.value = initialDate;
     }
 
-    const disabled = await availabilityStore.getDisabledDates()
+    const disabled = await availabilityStore.getDisabledDates();
     disabledDates.value = disabled.map((date) => {
-      const [year, month, day] = date.split('-')
-      return new Date(year, month - 1, day)
-    })
+      const [year, month, day] = date.split('-');
+      return new Date(year, month - 1, day);
+    });
 
-    await onDateSelected(selectedDate.value)
+    await onDateSelected(selectedDate.value);
   } catch (error) {
-    console.error(`Error getting available dates: ${error}`)
+    console.error(`Error getting available dates: ${error}`);
   }
-})
+});
 
 const isDateAvailable = (date) => {
-  const formattedDate = formatDate(date)
-  return !disabledDates.value.includes(formattedDate)
-}
+  const formattedDate = formatDate(date);
+  return !disabledDates.value.includes(formattedDate);
+};
 
 const findNextAvailableWeekday = (date) => {
-  let nextDate = new Date(date)
+  let nextDate = new Date(date);
 
   while (
     !isDateAvailable(nextDate) ||
     nextDate.getDay() === 0 ||
     nextDate.getDay() === 6
   ) {
-    nextDate.setDate(nextDate.getDate() + 1)
+    nextDate.setDate(nextDate.getDate() + 1);
   }
-  return nextDate
-}
+  return nextDate;
+};
 
 const formatDate = (date) => {
-  const year = date.getFullYear()
-  const month = String(date.getMonth() + 1).padStart(2, '0')
-  const day = String(date.getDate()).padStart(2, '0')
-  return `${year}-${month}-${day}`
-}
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
 
 const onDateSelected = async (date) => {
   try {
-    selectedDate.value = date
-    const year = date.getFullYear()
-    const month = String(date.getMonth() + 1).padStart(2, '0')
-    const day = String(date.getDate()).padStart(2, '0')
-    const formattedDate = `${year}-${month}-${day}`
-    const slots = await availabilityStore.getAvailableSlots(formattedDate)
-    availableSlots.value = slots
+    selectedDate.value = date;
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    const formattedDate = `${year}-${month}-${day}`;
+    const slots = await availabilityStore.getAvailableSlots(formattedDate);
+    availableSlots.value = slots;
   } catch (error) {
-    console.error(`Error getting available slots: ${error}`)
+    console.error(`Error getting available slots: ${error}`);
   }
-}
+};
 
 const onTimeSelect = (time) => {
-  selectedTime.value = time
-}
+  selectedTime.value = time;
+};
 
 const scheduleAppointment = async () => {
   try {
-    const selectedDateOnly = selectedDate.value.toISOString().split('T')[0]
-    formData.value.date = selectedDateOnly
-    formData.value.time = selectedTime.value
+    const selectedDateOnly = selectedDate.value.toISOString().split('T')[0];
+    formData.value.date = selectedDateOnly;
+    formData.value.time = selectedTime.value;
 
-    await appointmentStore.createAppointment(formData.value)
+    await appointmentStore.createAppointment(formData.value);
 
-    formData.value.date = ''
-    formData.value.time = ''
-    formData.value.name = ''
-    formData.value.email = ''
-    formData.value.phone = ''
-    formData.value.address = ''
-    formData.value.location = ''
-    formData.value.plate = ''
-    formData.value.fuelType = FuelType.GASOLINE
-    formData.value.sellerType = SellerType.PARTICULAR
-    formData.value.brand = ''
-    formData.value.model = ''
-    formData.value.year = ''
-    formData.value.willAttend = false
+    formData.value.date = '';
+    formData.value.time = '';
+    formData.value.name = '';
+    formData.value.email = '';
+    formData.value.phone = '';
+    formData.value.address = '';
+    formData.value.location = '';
+    formData.value.plate = '';
+    formData.value.fuelType = FuelType.GASOLINE;
+    formData.value.sellerType = SellerType.PARTICULAR;
+    formData.value.brand = '';
+    formData.value.model = '';
+    formData.value.year = '';
+    formData.value.willAttend = false;
   } catch (error) {
-    console.error(`Error scheduling appointment: ${error}`)
+    console.error(`Error scheduling appointment: ${error}`);
   }
-}
+};
 </script>
 
 <style>

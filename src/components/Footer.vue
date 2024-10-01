@@ -1,22 +1,17 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import { GoogleMap, Marker } from 'vue3-google-map'
-import { UserCircle2 } from '@iconsans/vue/bold'
-import { whyUs, footerServices } from '../utils/consts'
-
-const center = { lat: -34.62104415893555, lng: -58.57676315307617 }
-
-const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+import { RouterLink } from 'vue-router';
+import { UserCircle2 } from '@iconsans/vue/bold';
+import { whyUs, footerServices } from '../utils/consts';
 </script>
 
 <template>
   <footer
-    class="desktop-xl:px-40 desktop-lg:px-24 desktop-xl:py-12 py-10 px-10 bg-[#2b2b2b] text-white tracking-tight"
+    class="desktop-xl:px-32 desktop-lg:px-24 desktop-xl:py-12 py-10 px-10 bg-[#2b2b2b] text-white tracking-tight"
   >
     <div
-      class="grid md:grid-cols-2 lg:grid-cols-4 mobile-xs:space-y-6 mobile-sm:space-y-4 mobile-md:space-y-6"
+      class="grid md:grid-cols-2 lg:grid-cols-3 mobile-xs:space-y-6 mobile-sm:space-y-4 mobile-md:space-y-6"
     >
-      <div class="">
+      <div class="relative desktop-xl:left-32 desktop-lg:left-24">
         <div class="flex items-center border-b-2 border-[#2E6CA4] pb-2">
           <img
             src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998071/logo_bs3tv5.svg"
@@ -57,8 +52,8 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
             alt="mail"
             class="h-5 w-5"
           />
-          <a href="mailto:agustinochoa98@outlook.com"
-            >agustinochoa98@outlook.com</a
+          <a href="mailto:electronicajuancar@gmail.com"
+            >electronicajuancar@gmail.com</a
           >
         </div>
         <div class="flex items-center gap-2 mt-5">
@@ -71,7 +66,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
         </div>
       </div>
       <div
-        class="mt-2 relative desktop-xl:left-24 desktop-lg:left-20 md:left-10 mobile-xs:space-y-3 mobile-sm:space-y-3 mobile-md:space-y-3"
+        class="mt-2 relative desktop-xl:left-60 desktop-lg:left-20 md:left-10 mobile-xs:space-y-3 mobile-sm:space-y-3 mobile-md:space-y-3"
       >
         <h4 class="text-xl text-[#d5d5d5]">POR QUE JUANCAR</h4>
         <ul v-for="item in whyUs" class="mt-5 flex gap-2">
@@ -98,7 +93,7 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
         </ul>
       </div>
       <div
-        class="mt-2 relative tablet-md:left-10 desktop-xl:left-7 desktop-lg:left-16 mobile-xs:space-y-3 mobile-sm:space-y-3 mobile-md:space-y-3"
+        class="mt-2 relative tablet-md:left-10 desktop-xl:left-32 desktop-lg:left-16 mobile-xs:space-y-3 mobile-sm:space-y-3 mobile-md:space-y-3"
       >
         <h4 class="text-xl text-[#d5d5d5]">OTROS SERVICIOS</h4>
         <ul v-for="item in footerServices" class="mt-5 flex gap-2">
@@ -140,25 +135,9 @@ const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
               />
             </a>
           </div>
-        </div>
-      </div>
-      <div>
-        <div
-          class="relative lg:left-10 desktop-xl:right-10 mobile-md:left-10 mt-2"
-        >
-          <h4 class="text-xl text-[#d5d5d5]">MAPA DEL SITIO</h4>
-          <GoogleMap
-            :api-key="apiKey"
-            :center="center"
-            :zoom="15"
-            class="md:w-[80%] h-[200px] mt-5"
-          >
-            <Marker :options="{ position: center }" />
-          </GoogleMap>
-
           <RouterLink
             to="/login"
-            class="ml-auto mr-5 flex items-center gap-2 w-fit relative md:right-12 lg:right-10 desktop-xl:right-[17.7rem]"
+            class="ml-auto flex items-center gap-2 w-fit relative md:right-12 lg:right-10 desktop-xl:right-24"
           >
             <component :is="UserCircle2" class="h-8 w-8 mt-10 text-[#2E6CA4]" />
             <span class="text-[#747474] mt-10">Admin</span>

@@ -163,16 +163,16 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
-import { useReportStore, ReportType } from '../store/report'
+import { ref, watch } from 'vue';
+import { useReportStore, ReportType } from '@/store/report';
 import {
   WhatIsIncludedReport,
   HowToOrder,
   PaymentMethods,
   Footer,
-} from '../components'
+} from '@/components';
 
-const reportStore = useReportStore()
+const reportStore = useReportStore();
 
 const formData = ref({
   name: '',
@@ -181,9 +181,9 @@ const formData = ref({
   plate: '',
   reportType: '',
   price: '',
-})
+});
 
-const selectedReportType = ref('')
+const selectedReportType = ref('');
 
 const reportTypes = [
   {
@@ -198,27 +198,27 @@ const reportTypes = [
     label: 'Informe Dominio Histórico + Infracciones',
     price: '5840',
   },
-]
+];
 
 const submitReport = async () => {
   try {
-    formData.value.reportType = selectedReportType.value
-    await reportStore.sendReport(formData.value)
+    formData.value.reportType = selectedReportType.value;
+    await reportStore.sendReport(formData.value);
 
-    formData.value.name = ''
-    formData.value.email = ''
-    formData.value.phone = ''
-    formData.value.plate = ''
-    selectedReportType.value = ''
+    formData.value.name = '';
+    formData.value.email = '';
+    formData.value.phone = '';
+    formData.value.plate = '';
+    selectedReportType.value = '';
   } catch (error) {
-    console.error(`Error sending report: ${error}`)
+    console.error(`Error sending report: ${error}`);
   }
-}
+};
 
 watch(selectedReportType, (newValue) => {
-  const selectedType = reportTypes.find((type) => type.value === newValue)
+  const selectedType = reportTypes.find((type) => type.value === newValue);
   if (selectedType) {
-    formData.value.price = selectedType.price
+    formData.value.price = selectedType.price;
   }
-})
+});
 </script>

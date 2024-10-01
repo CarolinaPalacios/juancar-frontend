@@ -1,6 +1,6 @@
 <script setup>
-import { Footer } from '../components'
-import { services } from '../utils/consts'
+import { Footer } from '@/components';
+import { services } from '@/utils/consts';
 </script>
 
 <template>

@@ -1,6 +1,6 @@
-import { defineStore } from 'pinia'
-import axios from 'axios'
-const VITE_BASE_URL = import.meta.env.VITE_BASE_URL
+import { defineStore } from 'pinia';
+import axios from 'axios';
+const VITE_BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
@@ -14,33 +14,33 @@ export const useAuthStore = defineStore('auth', {
         const response = await axios.post(`${VITE_BASE_URL}/auth/login`, {
           email,
           password,
-        })
+        });
 
-        const { token, user } = response.data
+        const { token, user } = response.data;
 
-        localStorage.setItem('token', token)
+        localStorage.setItem('token', token);
 
-        this.isLoggedIn = true
-        this.user = user
-        this.token = token
+        this.isLoggedIn = true;
+        this.user = user;
+        this.token = token;
       } catch (error) {
-        console.error(`Error logging in: ${error}`)
-        throw error
+        console.error(`Error logging in: ${error}`);
+        throw error;
       }
     },
     async logout() {
       try {
-        await axios.post(`${VITE_BASE_URL}/auth/logout`)
+        await axios.post(`${VITE_BASE_URL}/auth/logout`);
 
-        localStorage.removeItem('token')
+        localStorage.removeItem('token');
 
-        this.isLoggedIn = false
-        this.user = null
-        this.token = null
+        this.isLoggedIn = false;
+        this.user = null;
+        this.token = null;
       } catch (error) {
-        console.error(`Error logging out: ${error}`)
-        throw error
+        console.error(`Error logging out: ${error}`);
+        throw error;
       }
     },
   },
-})
+});

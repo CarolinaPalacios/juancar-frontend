@@ -32,5 +32,5 @@
 </template>
 
 <script setup>
-import { items } from '../utils/consts'
+import { items } from '@/utils/consts';
 </script>

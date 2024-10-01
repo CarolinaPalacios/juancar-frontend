@@ -1,29 +1,31 @@
 <script setup>
-import { ref } from 'vue'
-import { useAuthStore } from '../store/auth'
-import { FwbInput } from 'flowbite-vue'
-import { Eye, EyeSlash } from '@iconsans/vue/bold'
+import { ref } from 'vue';
+import { RouterLink, useRouter } from 'vue-router';
+import { useAuthStore } from '@/store/auth';
+import { FwbInput } from 'flowbite-vue';
+import { Eye, EyeSlash } from '@iconsans/vue/bold';
 
-const email = ref('')
-const password = ref('')
-const errorMessage = ref('')
-const showPassword = ref(false)
-const authStore = useAuthStore()
+const email = ref('');
+const password = ref('');
+const errorMessage = ref('');
+const showPassword = ref(false);
+const authStore = useAuthStore();
+const router = useRouter();
 
 const handleLogin = async () => {
   try {
-    await authStore.login(email.value, password.value)
-    errorMessage.value = ''
-    console.log('Logged in')
+    await authStore.login(email.value, password.value);
+    errorMessage.value = '';
+    router.push({ name: 'homeDashboard' });
   } catch (error) {
     errorMessage.value =
-      'Credenciales inválidas, Por favor, inténtalo de nuevo.'
+      'Credenciales inválidas, Por favor, inténtalo de nuevo.';
   }
-}
+};
 
 const toggleShowPassword = () => {
-  showPassword.value = !showPassword.value
-}
+  showPassword.value = !showPassword.value;
+};
 </script>
 <template>
   <div class="flex min-h-screen items-center justify-center tracking-tight">

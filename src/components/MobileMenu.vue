@@ -1,14 +1,14 @@
 <template>
   <div class="lg:hidden tracking-tight">
     <button
-      class="hidden relative mobile-xs:left-[12rem] mobile-sm:left-[14rem] mobile-md:left-[42rem] mobile-xs:block mobile-sm:block mobile-md:block w-[30px] h-[28px]"
+      class="hidden relative mobile-xs:left-[12rem] mobile-sm:left-[14rem] mobile-md:left-[36rem] mobile-xs:block mobile-sm:block mobile-md:block w-[30px] h-[28px] z-10"
       @click="toggleMobileMenu"
     >
       <MenuHamburger class="w-[30px] h-[28px]" />
     </button>
     <div
       v-if="mobileMenuOpen"
-      class="lg:hidden absolute top-0 left-0 w-full mobile-xs:h-[30rem] mobile-sm:h-[32rem] mobile-md:h-[28rem] flex flex-col items-center justify-center duration-500 transition-all text-xl font-medium mobile-xs:text-lg bg-white"
+      class="lg:hidden fixed top-0 left-0 w-full mobile-xs:h-[30rem] mobile-sm:h-[32rem] mobile-md:h-[28rem] flex flex-col items-center justify-center duration-500 transition-all z-10 text-xl font-medium mobile-xs:text-lg bg-white"
     >
       <button
         class="absolute top-5 left-5 text-[#6d6d6d] focus:outline-none"
@@ -66,11 +66,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { MenuHamburger, Cross } from '@iconsans/vue/linear'
-import { Area, Box, Coins, Gear, Tools } from './icons'
-import { menuItems } from '../utils/consts'
+import { ref } from 'vue';
+import { MenuHamburger, Cross } from '@iconsans/vue/linear';
+import { Area, Box, Coins, Gear, Tools } from './icons';
+import { menuItems } from '@/utils/consts';
 
-const mobileMenuOpen = ref(false)
-const toggleMobileMenu = () => (mobileMenuOpen.value = !mobileMenuOpen.value)
+const mobileMenuOpen = ref(false);
+const toggleMobileMenu = () => (mobileMenuOpen.value = !mobileMenuOpen.value);
 </script>

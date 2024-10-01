@@ -114,7 +114,7 @@
                 </a>
               </button>
               <p class="mt-6 text-xs leading-5 text-gray-600">
-                Invoices and receipts available for easy company reimbursement
+                Este precio puede variar según las actualizaciones.
               </p>
             </div>
           </div>

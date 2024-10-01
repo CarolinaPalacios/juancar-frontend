@@ -1,8 +1,9 @@
-import { Gear, Box, Coins, Tools, Area } from '../components/icons'
+import { Gear, Box, Coins, Tools, Area } from '@/components/icons';
+import { VerificationType } from '@/store/price';
 
 interface Area {
-  name: string
-  subareas: string[]
+  name: string;
+  subareas: string[];
 }
 
 export const areas: Area[] = [
@@ -75,20 +76,16 @@ export const areas: Area[] = [
       'Villa Sarmiento',
     ],
   },
-  {
-    name: 'Zona Sur',
-    subareas: ['Avellaneda', 'Lanús Oeste'],
-  },
-]
+];
 
 export const years = Array.from(
   { length: new Date().getFullYear() - 1989 },
   (_, index) => (new Date().getFullYear() - index).toString()
-)
+);
 
 export interface WhyUs {
-  name: string
-  href: string
+  name: string;
+  href: string;
 }
 
 export const whyUs: WhyUs[] = [
@@ -100,11 +97,11 @@ export const whyUs: WhyUs[] = [
   { name: 'Cómo funciona', href: '/#como-funciona' },
   { name: 'Qué incluye', href: '/#que-incluye' },
   { name: 'Puntos de verificación', href: '/#puntos-de-verificación' },
-]
+];
 
 export interface FooterService {
-  name: string
-  href: string
+  name: string;
+  href: string;
 }
 
 export const footerServices: FooterService[] = [
@@ -112,12 +109,12 @@ export const footerServices: FooterService[] = [
   { name: 'Mecánica', href: '/servicios' },
   { name: 'Electrónica', href: '/servicios' },
   { name: 'Escaneo', href: '/servicios' },
-]
+];
 
 export interface Services {
-  name: string
-  src: string
-  description: string[]
+  name: string;
+  src: string;
+  description: string[];
 }
 
 export const services = [
@@ -163,12 +160,12 @@ export const services = [
     src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998181/scan_lveock.png',
     description: ['Escaneo', 'Diagnostico', 'Eliminación de averías'],
   },
-]
+];
 
 export interface MenuItem {
-  title: string
-  href: string
-  icon: any
+  title: string;
+  href: string;
+  icon: any;
 }
 
 export const menuItems: MenuItem[] = [
@@ -197,13 +194,13 @@ export const menuItems: MenuItem[] = [
     href: '/cotizar',
     icon: Coins,
   },
-]
+];
 
 export interface Item {
-  name: string
-  src: string
-  alt: string
-  description: string
+  name: string;
+  src: string;
+  alt: string;
+  description: string;
 }
 
 export const items: Item[] = [
@@ -291,28 +288,26 @@ export const items: Item[] = [
     src: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998021/exchange_fqi4vq.svg',
     alt: 'exchange',
   },
-]
+];
 
 export interface Report {
-  name: string
-  description: string
-  price: string
-  subtitle: string
-  services: string[]
-  numberOfPoints: number
-  color: string
-  buttonColor: string
-  hoverColor: string
-  activeColor: string
-  extra?: string
-  link: string
+  name: string;
+  description: string;
+  subtitle: string;
+  services: string[];
+  numberOfPoints: number;
+  color: string;
+  buttonColor: string;
+  hoverColor: string;
+  activeColor: string;
+  extra?: string;
+  link: string;
 }
 
 export const reports: Report[] = [
   {
-    name: 'VDA',
+    name: VerificationType.VDA,
     description: 'Verificación Dominio Automotor',
-    price: '$20.000',
     subtitle: 'Informe de Dominio:',
     services: [
       'Datos del vehículo y titulares',
@@ -335,9 +330,8 @@ export const reports: Report[] = [
     link: '/informe-dominio',
   },
   {
-    name: 'VMA',
+    name: VerificationType.VMA,
     description: 'Verificación Mecánica Automotor',
-    price: '$50.000',
     subtitle: 'Informe de Mecánica:',
     services: [
       'Recomendaciones técnicas',
@@ -360,9 +354,8 @@ export const reports: Report[] = [
     link: '/agendar-visita',
   },
   {
-    name: 'VPA',
+    name: VerificationType.VPA,
     description: 'Verificación Precompra Automotor',
-    price: '$65.000',
     subtitle: 'Todo incluído',
     extra: 'Verificación más completa:',
     services: [
@@ -377,4 +370,4 @@ export const reports: Report[] = [
     numberOfPoints: 550,
     link: '/agendar-visita',
   },
-]
+];

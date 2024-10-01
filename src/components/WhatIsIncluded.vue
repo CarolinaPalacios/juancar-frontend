@@ -218,7 +218,7 @@
         <span
           class="block text-[#666565] sm:text-sm mobile-xs:text-xs mobile-sm:text-xs mobile-md:text-xs"
         >
-          Servicio al cliente las 24 horas, los 365 días del año</span
+          Servicio al cliente disponible de lunes a sábados de 9hs a 19hs</span
         >
       </div>
       <div class="relative">

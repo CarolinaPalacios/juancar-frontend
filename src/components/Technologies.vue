@@ -39,7 +39,7 @@
       >
         <img
           class="rounded-t-lg"
-          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998096/medidor-neumaticos_tko7oi.png"
+          src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1719969660/medidor-de-neumaticos_lt1u45.png"
           alt="medidor de neumaticos"
         />
         <div class="p-5 bg-[#5f5f5f] rounded-b-lg">

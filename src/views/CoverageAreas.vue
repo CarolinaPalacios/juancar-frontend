@@ -35,6 +35,6 @@
 </template>
 
 <script setup>
-import { Footer } from '../components'
-import { areas } from '../utils/consts'
+import { Footer } from '@/components';
+import { areas } from '@/utils/consts';
 </script>

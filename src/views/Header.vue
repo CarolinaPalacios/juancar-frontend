@@ -1,14 +1,14 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import { MobileMenu } from '../components'
+import { RouterLink } from 'vue-router';
+import { MobileMenu } from '@/components';
 </script>
 
 <template>
   <header>
     <nav
-      class="flex items-center shadow-lg shadow-gray-600 h-20 border-b-2 border-b-black tracking-tight"
+      class="flex items-center tablet-md:justify-center desktop-xl:justify-center desktop-lg:justify-center shadow-lg shadow-gray-600 h-20 border-b-2 border-b-black tracking-tight"
     >
-      <RouterLink to="/" class="flex items-center gap-2 desktop-xl:ml-8 ml-5">
+      <RouterLink to="/" class="flex items-center gap-2 ml-5">
         <strong class="desktop-xl:text-xl text-lg">JuanCar</strong>
         <img
           src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1713998071/logo_bs3tv5.svg"
@@ -20,7 +20,7 @@ import { MobileMenu } from '../components'
 
       <nav class="hidden lg:flex justify-around tracking-tight">
         <div
-          class="text-[#909090] desktop-xl:ml-48 desktop-lg:ml-16 tablet-md:ml-10 desktop-xl:mr-48 desktop-lg:mr-16 desktop-lg:space-x-16 desktop-xl:space-x-36 tablet-md:space-x-5 py-2"
+          class="text-[#909090] desktop-xl:ml-24 desktop-lg:ml-12 tablet-md:ml-10 desktop-xl:mr-24 desktop-lg:mr-12 desktop-lg:space-x-24 desktop-xl:space-x-32 tablet-md:space-x-6 py-2"
         >
           <a
             href="/#como-funciona"

@@ -1,5 +1,5 @@
 <script setup>
-import { DatePicker, Footer } from '../components'
+import { DatePicker, Footer } from '@/components';
 </script>
 
 <template>
